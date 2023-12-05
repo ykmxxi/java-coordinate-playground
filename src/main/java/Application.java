@@ -1,7 +1,10 @@
+import line.controller.LineController;
+
 public class Application {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        LineController lineController = new LineController();
+        lineController.run();
     }
 
 }
