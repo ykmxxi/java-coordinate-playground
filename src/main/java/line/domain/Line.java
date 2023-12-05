@@ -12,6 +12,17 @@ public class Line {
         this.endPoint = endPoint;
     }
 
+    public double calculateLength() {
+        return Math.sqrt(
+                calculateSquare(endPoint.getX(), startPoint.getX())
+                        + calculateSquare(endPoint.getY(), startPoint.getY())
+        );
+    }
+
+    private double calculateSquare(final int endCoordinate, final int startCoordinate) {
+        return Math.pow(endCoordinate - startCoordinate, 2);
+    }
+
     @Override
     public boolean equals(final Object o) {
         if (this == o) {

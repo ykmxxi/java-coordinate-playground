@@ -26,6 +26,14 @@ public class Point {
         return coordinate >= MIN_COORDINATE && coordinate <= MAX_COORDINATE;
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
     @Override
     public boolean equals(final Object o) {
         if (this == o) {
